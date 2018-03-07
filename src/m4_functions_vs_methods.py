@@ -4,12 +4,12 @@ Demonstrates using (calling) FUNCTIONS and using (calling) METHODS:
   -- how they differ.
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and James Brandon.
+"""  # Done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ###############################################################################
 #
-# TODO: 2.
+# Done: 2.
 #   READ this comment, ASKING QUESTIONS as needed to understand it.
 #
 # Part 1:  CONSTRUCTING objects, applying ** METHODS ** to them:
@@ -82,6 +82,8 @@ def main():
     draw_many_squares(turtle, 3, 75, 15)
 
     turtle3()
+
+    try_methods()
 
     ###########################################################################
     # When the TODOs ask you to test YOUR code, put YOUR tests below this:
@@ -181,10 +183,17 @@ def try_methods():
       -- backward  100 units
     """
     ###########################################################################
-    # TODO: 3. Implement and this function, per its doc-string above.
+    # Done: 3. Implement and this function, per its doc-string above.
     #     (To test it, put a statement in   main   that calls this function.)
     ###########################################################################
+    ryan = rg.SimpleTurtle()
+    ryan.pen = rg.Pen('brown',5)
+    ryan.speed = 8
 
+    ryan.forward(150)
+    ryan.left(90)
+    ryan.forward(50)
+    ryan.backward(100)
 
 def try_functions():
     # IMPORTANT: Read the NOTE below before you try to solve this TO-DO!
@@ -195,7 +204,7 @@ def try_functions():
      -- One jumps to (-50, 50), then moves (while drawing) to (100, 100)
     """
     ###########################################################################
-    # TODO: 4. Implement and test this function, per its doc-string above.
+    # Done: 4. Implement and test this function, per its doc-string above.
     #    (To test it, put a statement in   main   that calls this function.)
     #
     #    NOTE: This function requires
@@ -204,7 +213,9 @@ def try_functions():
     #    HINT: see   jump_and_move_turtle   above.
     #
     ###########################################################################
-
+    jump_and_move_turtle(200,100,300,30)
+    jump_and_move_turtle(100,200,0,0)
+    jump_and_move_turtle(-50,50,100,100)
 
 def try_methods_and_functions():
     # IMPORTANT: Read the NOTE below before you try to solve this TO-DO!
