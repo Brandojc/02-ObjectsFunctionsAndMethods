@@ -188,7 +188,7 @@ def try_methods():
     ###########################################################################
     ryan = rg.SimpleTurtle()
     ryan.pen = rg.Pen('brown',5)
-    ryan.speed = 9
+    ryan.speed = 8
 
     ryan.forward(150)
     ryan.left(90)
