@@ -84,7 +84,7 @@ def main():
     turtle3()
 
     try_methods()
-
+    try_methods_and_functions()
     ###########################################################################
     # When the TODOs ask you to test YOUR code, put YOUR tests below this:
     ###########################################################################
@@ -251,7 +251,7 @@ def try_methods_and_functions():
       8. Draw a SQUARE whose sides are each of length 50.
     """
     ###########################################################################
-    # TODO: 5. Implement and test this function, per its doc-string above.
+    # Done: 5. Implement and test this function, per its doc-string above.
     #    (To test it, put a statement in   main   that calls this function.)
     #
     #   NOTE: This function should ** CALL ** the
@@ -259,8 +259,25 @@ def try_methods_and_functions():
     #   function defined above.  If you don't see why, ** ASK FOR HELP. **
     #
     ###########################################################################
+    cory = rg.SimpleTurtle()
+    cory.pen = rg.Pen('blue',5)
 
+    cory.backward(150)
+    cory.speed = 1
+    draw_many_squares(cory,2,100,30)
 
+    cory.speed = 5
+    cory.pen = rg.Pen('red',5)
+    draw_many_squares(cory,10,50,15)
+
+    cory.speed = 100
+    cory.pen =rg.Pen('red',35)
+    draw_many_squares(cory,8,300,60)
+
+    cory.pen =rg.Pen('black',3)
+    cory.backward(200)
+    cory.draw_circle(30)
+    cory.draw_square(50)
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
 # -----------------------------------------------------------------------------
